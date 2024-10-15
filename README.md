@@ -1,4 +1,4 @@
-<p align="center">
+ <p align="center">
   <img alt="Version" src="https://img.shields.io/github/release/tosuapp/tosu.svg?style=for-the-badge&color=%235686A2" />
   <img src="https://img.shields.io/badge/node-%3E%3D20.11.1-45915E.svg?style=for-the-badge&logo=node.js&logoColor=white" />
   <a href="https://github.com/tosuapp/tosu/blob/master/LICENSE" target="_blank"><img alt="License: GPL--3.0" src="https://img.shields.io/github/license/tosuapp/tosu?style=for-the-badge&color=%23A27456" /></a>
