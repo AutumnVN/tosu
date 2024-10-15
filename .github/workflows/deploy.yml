@@ -2,19 +2,6 @@ name: build & deploy
 
 on:
   push:
-    branches: [ "master" ]
-    tags:
-      - "v*"
-    paths:
-      - ".github/workflows/**/*"
-      - "packages/**/*"
-      - "package.json"
-      - "pnpm-lock.yaml"
-  pull_request:
-    paths:
-      - "packages/**/*"
-      - "package.json"
-      - "pnpm-lock.yaml"
 
 concurrency:
   group: build-${{ github.sha }}
@@ -54,7 +41,7 @@ jobs:
         }
 
       - name: 🛠️ - Install Deps
-        run: npm install -g pnpm@^8 && pnpm install --frozen-lockfile
+        run: npm install -g pnpm@^8 && pnpm install --no-frozen-lockfile
 
       - name: 📦 - Build (windows)
         if: ${{ matrix.os == 'windows-latest' }}
